@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Buenavista Helados</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/cucurucho-de-helado.png" rel="icon">
+  <link href="assets/img/cucurucho-de-helado.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Buenavista Helados</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#menu-starters">Desayunos</a></li>
+          <li><a href="#menu-desserts">Meriendas</a></li>
+          <li><a href="#menu">Comidas/Cenas</a></li>
+          <li><a href="#location">Ubicación</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted d-none d-sm-block" href="#location">Contacto</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="hero-content">
+          <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="content">
+                <h1 class="hero-title mb-4">Disfruta de Nuestro Sabor Artesanal</h1>
+                <p class="hero-subtitle mb-4">En Buenavista Helados elaboramos cada sabor con ingredientes frescos y recetas tradicionales para ofrecerte una experiencia única. Desde los clásicos de siempre hasta creaciones innovadoras, cada bocado está pensada para sorprender tu paladar. Ven a disfrutar de un momento dulce en un ambiente acogedor, perfecto para compartir con familia y amigos.</p>
+
+                <div class="hero-info d-flex flex-wrap align-items-center gap-4">
+                  <div class="info-item d-flex align-items-center">
+                    <i class="bi bi-clock me-2"></i>
+                    <div>
+                      <small class="text-muted">Lunes - Miércoles - Jueves - Viernes</small>
+                      <div class="fw-medium">08:00 - 24:00</div>
+                      <small class="text-muted">Sábado - Domingo</small>
+                      <div class="fw-medium">09:00 - 24:00</div>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex align-items-center">
+                    <i class="bi bi-geo-alt me-2"></i>
+                    <div>
+                      <small class="text-muted">Ubicación</small>
+                      <div class="fw-medium">Av. Francisco Largo Caballero, 5, Local 3, 28905 Getafe, Madrid</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="hero-images">
+                <div class="main-image">
+                  <img src="assets/img/restaurante.jpg" alt="Restaurante" class="img-fluid">
+                </div>
+                <div class="floating-images">
+                  <div class="floating-image floating-image-1">
+                    <img src="assets/img/crepes.jpg" alt="Crepes" class="img-fluid">
+                  </div>
+                  <div class="floating-image floating-image-2">
+                    <img src="assets/img/tortitas.jpg" alt="Tortitas" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Bloques Temáticos Section -->
+    <section id="bloques-tematicos" class="section light-background">
+      <div class="container">
+        <div class="row gy-4 align-items-stretch">
+
+          <!-- BLOQUE 1: DESAYUNOS -->
+          <div class="col-lg-4 col-md-4 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 text-center" style="background-color: var(--surface-color); border-radius: 15px; box-shadow: 0 5px 30px rgba(0,0,0,0.08);">
+              <img src="assets/img/terraza.jpg" class="card-img-top" alt="Desayunos" style="height: 250px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 style="color: var(--heading-color); font-weight: 700; margin-bottom: 15px;">El Despertar</h3>
+                <p class="mb-4" style="color: var(--default-color); font-size: 15px;"><strong>Especialidad:</strong> Tortitas artesanales.</p>
+                <a href="#menu-starters" class="btn mt-auto align-self-center" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 10px 30px; border-radius: 50px; font-weight: 600; transition: 0.3s;">Ver Desayunos</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BLOQUE 2: MERIENDAS -->
+          <div class="col-lg-4 col-md-4 col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 text-center" style="background-color: var(--surface-color); border-radius: 15px; box-shadow: 0 5px 30px rgba(0,0,0,0.08);">
+              <img src="assets/img/helados1.jpg" class="card-img-top" alt="Meriendas" style="height: 250px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 style="color: var(--heading-color); font-weight: 700; margin-bottom: 15px;">El Momento Dulce</h3>
+                <p class="mb-4" style="color: var(--default-color); font-size: 15px;"><strong>Especialidad:</strong> Helados y Bollería.</p>
+                <a href="#menu-desserts" class="btn mt-auto align-self-center" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 10px 30px; border-radius: 50px; font-weight: 600; transition: 0.3s;">Ver Meriendas</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BLOQUE 3: COMIDAS Y RACIONES -->
+          <div class="col-lg-4 col-md-4 col-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 border-0 text-center" style="background-color: var(--surface-color); border-radius: 15px; box-shadow: 0 5px 30px rgba(0,0,0,0.08);">
+              <img src="assets/img/torreznos.png" class="card-img-top" alt="Comidas y Raciones" style="height: 250px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 style="color: var(--heading-color); font-weight: 700; margin-bottom: 15px;">Cocina y Tapas</h3>
+                <p class="mb-4" style="color: var(--default-color); font-size: 15px;"><strong>Especialidad:</strong> Raciones y Platos Combinados.</p>
+                <a href="#menu" class="btn mt-auto align-self-center" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 10px 30px; border-radius: 50px; font-weight: 600; transition: 0.3s;">Ver Comidas/Cenas</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Bloques Temáticos Section -->
+
+
+    
+        <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Carta</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="menu-filters">
+              <ul class="nav nav-pills justify-content-center" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="menu-starters-tab" data-bs-toggle="pill" data-bs-target="#menu-starters" type="button" role="tab">
+                    <i class="bi bi-fork-knife me-2"></i>Desayunos
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="menu-desserts-tab" data-bs-toggle="pill" data-bs-target="#menu-desserts" type="button" role="tab">
+                    <i class="bi bi-cake2 me-2"></i>Meriendas
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="menuTabContent">
+          <!-- Raciones Tab -->
+          <div class="tab-pane fade show active" id="menu-starters" role="tabpanel">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/barritaConTomate.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Barrita con Tomate</h4>
+                      
+                    </div>
+                    <p>Pan crujiente recién tostado, acompañado de tomate natural triturado, aceite de oliva virgen extra y una pizca de sal. El clásico mediterráneo esencial.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">3€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/BarritaMantequillaMermelada.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Barrita con Mantequilla y Mermelada</h4>
+
+                    </div>
+                    <p>Tostada dorada y caliente, lista para untar con mantequilla cremosa y mermelada de frutas. Un desayuno dulce y reconfortante.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">3€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/mediaBarrita.png" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Media Barrita</h4>
+
+                    </div>
+                    <p>La ración perfecta para un bocado ligero. Disfrútala con tomate natural y aceite, o con el toque dulce de mantequilla y mermelada.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">2,60€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/barritaJamon.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Barrita con Jamón</h4>
+
+                    </div>
+                    <p>Pan tostado con base de tomate natural y generosas lonchas de jamón serrano reserva. Sabor auténtico y de calidad en cada bocado.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,70€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tostadaAguacate.jpeg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tostada con Aguacate</h4>
+                      
+                    </div>
+                    <p>Base de pan rústico con una capa de queso Philadelphia, láminas de aguacate fresco, pavo, aceite de oliva y sal. Una opción saludable y deliciosa.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5,40€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tostadaAguacateHuevo.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tostada con Aguacate y Huevo Poché</h4>
+
+                    </div>
+                    <p>Nuestra tostada de pan rústico con queso Philadelphia, pavo y aguacate, coronada con un huevo poché en su punto exacto de cremosidad.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5,90€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/croissantPlancha.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Croissant a la Plancha</h4>
+
+                    </div>
+                    <p>Croissant tierno y hojaldrado, pasado por la plancha para un toque crujiente, acompañado de mantequilla y mermelada.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">3€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/croissantMixto.png" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Croissant Mixto</h4>
+
+                    </div>
+                    <p>La combinación perfecta de dulce y salado: croissant a la plancha relleno de jamón york de primera y queso fundido.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,20€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/sandwichMixto.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Sándwich Mixto</h4>
+                      
+                    </div>
+                    <p>El clásico de siempre, tostado al momento con jamón york y queso derretido. Sencillo, dorado y delicioso.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,20€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/desayunoAmericano.png" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Desayuno Americano</h4>
+
+                    </div>
+                    <p>Para empezar el día con energía: huevos fritos, bacon crujiente y pan tostado. Un festín clásico y abundante.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5,90€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/desayunoZumo.png" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Desayuno Zumo</h4>
+
+                    </div>
+                    <p>Tu elección de barrita recién tostada o bollería artesana, acompañada de un refrescante zumo de naranja natural.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/bolleria.png" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Desayuno Bollería</h4>
+
+                    </div>
+                    <p>Una selección de nuestra bollería más tierna y variada, ideal para los amantes del dulce matutino.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">2,90€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tortillaCafe.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tortilla de Patata con Café</h4>
+
+                    </div>
+                    <p>Pincho de tortilla jugosa, elaborada al estilo tradicional, acompañada de tu café favorito.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tortillaRefresco.jpg" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tortilla de Patata con Refresco</h4>
+
+                    </div>
+                    <p>Nuestra tortilla casera servida con un refresco bien frío. El tentempié ideal para cualquier momento del día.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5,20€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/zumo.png" class="img-fluid" alt="Starter">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Zumo de Naranja Natural</h4>
+
+                    </div>
+                    <p>Naranjas seleccionadas y exprimidas al momento para ofrecerte toda la vitamina y frescura natural.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">1,70€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="assets/resource/CartaBuenavistaHelados.pdf" class="btn btn-download">
+                  <i class="bi bi-download me-2"></i>Carta Completa (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- DesayunosMeriendas Tab -->
+          <div class="tab-pane fade" id="menu-desserts" role="tabpanel">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tortillaCafe.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Pincho de Tortilla</h4>
+
+                    </div>
+                    <p>Nuestra receta más tradicional: tortilla de patatas jugosa y con el punto justo de cocción</p>
+                    <div class="menu-item-footer">
+                      <span class="price">3,60€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/sandwichMixto.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Sándwich Mixto</h4>
+
+                    </div>
+                    <p>El clásico imbatible de jamón york y queso fundido, preparado a tu elección en tierno pan de molde o en un croissant hojaldrado. Acompañado de patatas fritas crujientes.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,20€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/sandwichMixtoHuevo.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Sándwich Mixto con Huevo</h4>
+
+                    </div>
+                    <p>Elevamos nuestro sándwich mixto añadiendo un huevo a la plancha para una explosión de sabor y una textura aún más cremosa.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tostadaJamonYork.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tostada de Jamón York</h4>
+
+                    </div>
+                    <p>Pan recién tostado con finas lonchas de jamón york de primera calidad. Sencillo y equilibrado</p>
+                    <div class="menu-item-footer">
+                      <span class="price">3,80€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/bolleria.png" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Bollería Variada</h4>
+
+                    </div>
+                    <p>Una selección diaria de nuestros mejores dulces: croissants, napolitanas y más, siempre frescos y horneados para ti.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">2€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tortillaCafe.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tortitas con Café</h4>
+
+                    </div>
+                    <p>El pack ideal para una gran merienda: una ración de nuestras tortitas doradas acompañadas de tu café favorito.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">6,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tortillaRefresco.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tortitas con Refresco</h4>
+
+                    </div>
+                    <p>La merienda perfecta que combina la esponjosidad de las tortitas con el toque refrescante de tu bebida preferida.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">7,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/tortitas.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Tortita solas</h4>
+
+                    </div>
+                    <p>Nuestras famosas tortitas caseras, servidas calientes y con esa textura suave y dorada que tanto te gusta.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/crepes.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Crepes</h4>
+
+                    </div>
+                    <p>Finos, ligeros y preparados al momento. Una base perfecta para rellenar con tus sabores dulces preferidos.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">5,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="assets/img/gofres2.jpg" class="img-fluid" alt="Dessert">
+                  </div>
+                  <div class="menu-item-content">
+                    <div class="menu-item-header">
+                      <h4>Gofres</h4>
+
+                    </div>
+                    <p>Crujientes por fuera y tiernos por dentro. Elige tu topping favorito: sirope de chocolate, fresa, caramelo, nata o Nutella.</p>
+                    <p>Topping Extra: Añade un toque más de sabor por solo 0.50€.</p>
+                    <p>Bola de Helado: Hazlo irresistible añadiendo tu sabor de helado artesano favorito por 1.50€.</p>
+                    <div class="menu-item-footer">
+                      <span class="price">4,20€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="assets/resource/CartaDesayunosMeriendas.pdf" class="btn btn-download">
+                  <i class="bi bi-download me-2"></i>Carta Desayunos y Meriendas (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </section><!-- /Menu Section -->
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/restaurante1.jpg" alt="Restaurante1" class="img-fluid rounded">
+              <div class="experience-badge">
+                <span class="years">+10</span>
+                <span class="text">Años de Experiencia Culinaria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <h2>Conoce nuestra heladería</h2>
+              </div>
+
+              <div class="story-text">
+                <p>En Buenavista Helados creemos que los mejores momentos se disfrutan alrededor de una buena mesa. Aunque somos conocidos por nuestros helados artesanales, nuestro espacio va mucho más allá: somos un punto de encuentro donde disfrutar desde un café tranquilo hasta una comida informal o una copa entre amigos.</p>
+
+                <p>Trabajamos con ingredientes de calidad y cuidamos cada detalle, tanto en la elaboración de nuestros helados como en nuestra oferta de cafetería y bar. Servimos raciones, bocadillos y combinados pensados para compartir, acompañar una buena conversación o simplemente desconectar del día a día.</p>
+
+                <p>Nuestro objetivo es ofrecer un ambiente cercano y acogedor, donde cada cliente se sienta cómodo a cualquier hora del día. En Buenavista Helados te esperamos para endulzar tus tardes, acompañar tus comidas y brindar contigo en cada ocasión.</p>
+              </div>
+
+              
+
+              <div class="chef-quote">
+                <blockquote>
+                  "No se puede pensar bien, amar bien ni dormir bien si no se ha comido bien."
+                </blockquote>
+                <cite>- Virginia Woolf</cite>
+              </div>
+
+              <div class="cta-buttons">
+                <a href="#menu" class="btn btn-primary">Nuestra Carta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-gallery" data-aos="fade-up" data-aos-delay="400">
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-item">
+                <img src="assets/img/terraza.jpg" alt="Terraza" class="img-fluid rounded">
+                <div class="gallery-caption">
+                  <h4>Terraza</h4>
+                  <p>Para disfrutar al aire libre</p>
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-item">
+                <img src="assets/img/helados1.jpg" alt="Helados" class="img-fluid rounded">
+                <div class="gallery-caption">
+                  <h4>Helados</h4>
+                  <p>Prueba nuestra amplia gama de sabores</p>
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-item">
+                <img src="assets/img/desayunos1.jpg" alt="Desayunos" class="img-fluid rounded">
+                <div class="gallery-caption">
+                  <h4>Desayunos</h4>
+                  <p>Comienza el día con energía</p>
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+    <!-- Location Section -->
+    <section id="location" class="location section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="location-content">
+              <div class="content-header">
+                <h2>Visita nuestro establecimiento</h2>
+              </div>
+
+              <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.513902419321!2d-3.752089!3d40.298778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE3JzU1LjYiTiAzwrA0NScwNy41Ilc!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="map-overlay">
+                  <div class="location-badge">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Estamos aquí</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="contact-sidebar">
+              <div class="contact-card">
+                <div class="card-icon">
+                  <i class="bi bi-building"></i>
+                </div>
+                <h3>Direcci&oacute;n</h3>
+                <p>Av. Francisco Largo Caballero, 5, Local 3<br>28905 Getafe, Madrid</p>
+              </div>
+
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="350">
+                <div class="card-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <h3>Tel&eacute;fono</h3>
+                <p class="phone"><a href="tel:643259343">643 25 93 43</a></p>
+              </div>
+
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="450">
+                <div class="card-icon">
+                  <i class="bi bi-clock-fill"></i>
+                </div>
+                <h3>Horario</h3>
+                <div class="hours-list">
+                  <div class="hour-item">
+                    <span class="day">Miércoles - Viernes</span>
+                    <span class="time">8:00 AM - 24:00 PM</span>
+                  </div>
+                  <div class="hour-item">
+                    <span class="day">Sábado - Domingo</span>
+                    <span class="time">9:00 AM - 24:00 PM</span>
+                  </div>
+                  <div class="hour-item">
+                    <span class="day">Lunes</span>
+                    <span class="time">8:00 AM - 24:00 PM</span>
+                  </div>
+                  <div class="hour-item closed">
+                    <span class="day">Martes</span>
+                    <span class="time">Cerrado</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Location Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
