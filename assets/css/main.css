@@ -959,7 +959,7 @@ section,
 @media (max-width: 991px) {
  .hero .hero-content .content {
  padding-right: 0;
- text-align: left; /* <-- Aquí está el cambio */
+ text-align: left; 
  margin-bottom: 3rem;
  }
 }
