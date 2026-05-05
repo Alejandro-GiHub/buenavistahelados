@@ -957,11 +957,11 @@ section,
 }
 
 @media (max-width: 991px) {
-  .hero .hero-content .content {
-    padding-right: 0;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+ .hero .hero-content .content {
+ padding-right: 0;
+ text-align: left; /* <-- Aquí está el cambio */
+ margin-bottom: 3rem;
+ }
 }
 
 .hero .hero-content .hero-title {
@@ -4029,9 +4029,53 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+
+
+/*Estilos POP-UP*/
+.modal-menu-content {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-menu-header {
+    border-bottom: 2px solid var(--accent-color);
+    background-color: var(--surface-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.modal-menu-title {
+    color: var(--heading-color);
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+
+.modal-menu-item {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.modal-menu-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-menu-item-title {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.modal-menu-price {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.modal-menu-desc {
+    font-size: 0.9rem;
+    margin: 0;
 }
