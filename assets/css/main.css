@@ -4065,17 +4065,62 @@ section,
 }
 
 .modal-menu-item-title {
-    font-size: 1.1rem;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 20px; 
+    font-weight: 700;
+    line-height: 1.3;
     margin: 0;
 }
 
 .modal-menu-price {
+    font-family: var(--accent-color); 
     color: var(--accent-color);
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 24px;
+    font-weight: 800; 
+    margin: 0;
+}
+.modal-menu-category-title {
+    color: var(--heading-color);
+    font-weight: 700;
+    font-family: var(--heading-font);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
 }
 
 .modal-menu-desc {
-    font-size: 0.9rem;
-    margin: 0;
+    font-family: var(--default-font);
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.modal-menu-item .menu-item-content {
+    display: flex !important;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.modal-menu-item .menu-item-header {
+    display: contents !important;
+}
+
+.modal-menu-item .menu-item-content .modal-menu-item-title {
+    order: 1;
+    margin-bottom: 8px !important;
+}
+
+.modal-menu-item .menu-item-content .modal-menu-desc {
+    order: 2;
+    flex-grow: 1; 
+    margin-top: 0 !important;
+}
+
+.modal-menu-item .menu-item-content .modal-menu-price {
+    order: 3;
+    display: block !important;
+    text-align: right;
+    margin-top: 15px !important;
 }

@@ -34,16 +34,15 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">Buenavista Helados</h1>
+      <img src="assets/img/logo.png" alt="Buenavista Helados">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#menu-starters">Desayunos</a></li>
-          <li><a href="#menu-desserts">Meriendas</a></li>
-          <li><a href="#menu">Comidas/Cenas</a></li>
-          <li><a href="#location">Ubicación</a></li>
+          <li><a href="#bloques-tematicos">Carta</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#contact">Ubicación y Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -158,7 +157,9 @@
                 <div class="card-body p-4 d-flex flex-column">
                   <h3 style="color: var(--heading-color); font-weight: 700; margin-bottom: 15px;">Cocina y Tapas</h3>
                   <p class="mb-4" style="color: var(--default-color); font-size: 15px;"><strong>Especialidad:</strong> Raciones y Platos Combinados.</p>
-                  <a href="#menu" class="btn mt-auto align-self-center" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 10px 30px; border-radius: 50px; font-weight: 600; transition: 0.3s;">Ver Comidas/Cenas</a>
+                  <button type="button" class="btn mt-auto align-self-center" data-bs-toggle="modal" data-bs-target="#modalComidas" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 10px 30px; border-radius: 50px; font-weight: 600; transition: 0.3s; border: none;">
+                    Ver Comidas/Cenas
+                  </button>
                 </div>
               </div>
             </div>
@@ -166,11 +167,6 @@
           </div>
         </div>
     </section>
-        
-        
-        
-        
-
     
 
     <!-- About Section -->
@@ -754,6 +750,290 @@
           </div>
         </div>
         
+      </div>
+    </div>
+  </div>
+
+  <!-- POP-UP COMIDAS Y RACIONES -->
+  <div class="modal fade" id="modalComidas" tabindex="-1" aria-labelledby="modalComidasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modal-menu-content">
+        
+        <div class="modal-header modal-menu-header">
+          <h5 class="modal-title modal-menu-title" id="modalComidasLabel">Carta de Comidas y Cenas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Platos Combinados</h3>
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item">
+                <div class="menu-item-image"><img src="" class="img-fluid w-100 modal-menu-img" alt="Combinado de Pollo"></div>
+                <div class="menu-item-content p-3">
+                  <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="modal-menu-item-title">Combinado de Pollo</h4>
+                    <span class="price modal-menu-price">11€</span>
+                  </div>
+                  <p class="modal-menu-desc">Con patatas, huevo, pollo a la plancha o empanado</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item">
+                <div class="menu-item-image"><img src="" class="img-fluid w-100 modal-menu-img" alt="Combinado de Ternera"></div>
+                <div class="menu-item-content p-3">
+                  <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="modal-menu-item-title">Combinado de Bistec de Ternera</h4>
+                    <span class="price modal-menu-price">11,50€</span>
+                  </div>
+                  <p class="modal-menu-desc">Con patatas y huevo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item">
+                <div class="menu-item-image"><img src="" class="img-fluid w-100 modal-menu-img" alt="Combinado de Cinta de Lomo"></div>
+                <div class="menu-item-content p-3">
+                  <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="modal-menu-item-title">Combinado de Cinta de Lomo</h4>
+                    <span class="price modal-menu-price">9,50€</span>
+                  </div>
+                  <p class="modal-menu-desc">Con patatas o ensalada y huevo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item">
+                <div class="menu-item-image"><img src="" class="img-fluid w-100 modal-menu-img" alt="Menu Burger"></div>
+                <div class="menu-item-content p-3">
+                  <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="modal-menu-item-title">Menu Burger</h4>
+                    <span class="price modal-menu-price">10,50€</span>
+                  </div>
+                  <p class="modal-menu-desc">Hamburguesa con patatas fritas y bebida</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Hamburguesas y Sándwiches</h3>
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Hamburguesa Clásica</h4>
+                  <span class="price modal-menu-price">10€</span>
+                </div>
+                <p class="modal-menu-desc">Carne, lechuga, tomate, bacon y queso</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Hamburguesa con Huevo</h4>
+                  <span class="price modal-menu-price">11€</span>
+                </div>
+                <p class="modal-menu-desc">Carne o pollo, lechuga, tomate, huevo, bacon y queso</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Hamburguesa Pollo</h4>
+                  <span class="price modal-menu-price">10,50€</span>
+                </div>
+                <p class="modal-menu-desc">Lechuga, tomate, queso y bacon</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Sandwich Mixto</h4>
+                  <span class="price modal-menu-price">4,20€</span>
+                </div>
+                <p class="modal-menu-desc">Acompañado de patatas fritas</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Sandwich Mixto con Huevo</h4>
+                  <span class="price modal-menu-price">5,50€</span>
+                </div>
+                <p class="modal-menu-desc">Acompañado de patatas fritas</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Huevos y Especialidades</h3>
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Entrecot de Vaca</h4>
+                  <span class="price modal-menu-price">19€</span>
+                </div>
+                <p class="modal-menu-desc">Acompañados con pimientos de padrón y patatas fritas</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Solomillo de Cerdo</h4>
+                  <span class="price modal-menu-price">12€</span>
+                </div>
+                <p class="modal-menu-desc">Con guarnición de patatas fritas</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Secreto Ibérico</h4>
+                  <span class="price modal-menu-price">12€</span>
+                </div>
+                <p class="modal-menu-desc">Con guarnición de patatas fritas</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Magro con Tomate</h4>
+                  <span class="price modal-menu-price">10€</span>
+                </div>
+                <p class="modal-menu-desc">Con guarnición de patatas fritas</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Huevos Rotos</h4>
+                  <span class="price modal-menu-price">11€</span>
+                </div>
+                <p class="modal-menu-desc">Puedes elegir entre: Jamón, morcilla o chistorra</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center">
+                <div class="w-100 d-flex justify-content-between">
+                  <h4 class="modal-menu-item-title">Tortilla de Patata Entera</h4>
+                  <span class="price modal-menu-price">12€</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center">
+                <div class="w-100 d-flex justify-content-between">
+                  <h4 class="modal-menu-item-title">Pincho de Tortilla</h4>
+                  <span class="price modal-menu-price">3,60€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Raciones</h3>
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Sepia Completa</h4>
+                  <span class="price modal-menu-price">18€</span>
+                </div>
+                <p class="modal-menu-desc">500 gramos aproximadamente</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Torreznos</h4>
+                  <span class="price modal-menu-price">12€</span>
+                </div>
+                <p class="modal-menu-desc">Con base de patatas revolconas</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Tequeños</h4>
+                  <span class="price modal-menu-price">8,50€</span>
+                </div>
+                <p class="modal-menu-desc">6 unidades con salsa barbacoa o mermelada de fresa</p>
+              </div>
+            </div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Sepia</h4><span class="price modal-menu-price">12€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Calamares</h4><span class="price modal-menu-price">12€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Chistorra</h4><span class="price modal-menu-price">9,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Croquetas</h4><span class="price modal-menu-price">13,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Chorizo</h4><span class="price modal-menu-price">9,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Salchipapas</h4><span class="price modal-menu-price">8,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Tiras de Pollo</h4><span class="price modal-menu-price">12€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Oreja a la Plancha</h4><span class="price modal-menu-price">13€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Alitas de Pollo</h4><span class="price modal-menu-price">10€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Patatas Bravas o Ali Oli</h4><span class="price modal-menu-price">7€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Boquerones</h4><span class="price modal-menu-price">10€</span></div></div></div>
+          </div>
+
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Ensaladas</h3>
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-12">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Ensalada Burrata</h4>
+                  <span class="price modal-menu-price">12€</span>
+                </div>
+                <p class="modal-menu-desc">Tomate, lechuga, queso, anchoas, tomate seco y salsa de pistacho</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Ensalada César</h4>
+                  <span class="price modal-menu-price">9,50€</span>
+                </div>
+                <p class="modal-menu-desc">Pollo, lechuga, pan tostado, queso, cebolla frita y salsa césar</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="menu-item h-100 modal-menu-item p-3">
+                <div class="menu-item-header d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="modal-menu-item-title">Ensalada Mixta</h4>
+                  <span class="price modal-menu-price">9,50€</span>
+                </div>
+                <p class="modal-menu-desc">Lechuga, tomate, cebolla, zanahoria, maíz, atún, aceitunas, aceite y vinagre</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Bocadillos</h3>
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Pepito de Ternera</h4><span class="price modal-menu-price">8€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Tortilla</h4><span class="price modal-menu-price">6€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Calamares</h4><span class="price modal-menu-price">7€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Chorizo Ibérico</h4><span class="price modal-menu-price">6€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Chistorra</h4><span class="price modal-menu-price">6€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Lomo</h4><span class="price modal-menu-price">6€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Oreja</h4><span class="price modal-menu-price">6€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Pollo con Vegetal</h4><span class="price modal-menu-price">6€</span></div></div></div>
+          </div>
+
+          <h3 class="w-100 mt-2 mb-4 modal-menu-category-title">Vinos</h3>
+          <div class="row gy-4">
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Botella de Protos</h4><span class="price modal-menu-price">20€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Botella de Vinos Blancos</h4><span class="price modal-menu-price">18€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Protos Tinto</h4><span class="price modal-menu-price">3,80€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Cune Tinto</h4><span class="price modal-menu-price">3,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Tamarón</h4><span class="price modal-menu-price">3,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Cuatro Rayas</h4><span class="price modal-menu-price">3€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Protos Verdejo Blanco</h4><span class="price modal-menu-price">3,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Cune Blanco</h4><span class="price modal-menu-price">3€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Alma</h4><span class="price modal-menu-price">3€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Copa Esencia 27</h4><span class="price modal-menu-price">3€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Martini</h4><span class="price modal-menu-price">3,50€</span></div></div></div>
+            <div class="col-lg-6"><div class="menu-item h-100 modal-menu-item p-3 d-flex align-items-center"><div class="w-100 d-flex justify-content-between"><h4 class="modal-menu-item-title">Vermut Izaguirre</h4><span class="price modal-menu-price">3,50€</span></div></div></div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
