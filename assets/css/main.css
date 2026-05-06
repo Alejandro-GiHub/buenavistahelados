@@ -443,11 +443,10 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background: var(--background-color);
+  background-color: #FFF9F7;
   font-size: 14px;
-  padding: 80px 0 0;
+  padding: 30px 0 0; 
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .footer .footer-content .logo {
@@ -617,6 +616,7 @@ h6 {
 
 .footer .social-links {
   display: flex;
+  justify-content: center;
   gap: 12px;
   margin-top: 25px;
 }
@@ -720,12 +720,11 @@ h6 {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 60px 0 0;
+    padding: 30px 0 0; 
   }
 
   .footer .footer-content {
     text-align: center;
-    margin-bottom: 40px;
   }
 
   .footer .footer-links,
