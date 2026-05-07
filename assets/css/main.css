@@ -4123,3 +4123,7 @@ section,
     text-align: right;
     margin-top: 15px !important;
 }
+
+.alineadoIzq {
+    text-align: left;
+}
