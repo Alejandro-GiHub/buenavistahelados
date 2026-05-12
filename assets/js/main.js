@@ -184,4 +184,26 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Banner de Cookies
+   */
+  document.addEventListener("DOMContentLoaded", () => {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    // Comprobamos que el banner exista en la página actual
+    if (cookieBanner && acceptBtn) {
+      // Si no existe el registro de aceptación en el navegador, lo mostramos
+      if (!localStorage.getItem("cookiesAceptadas")) {
+        cookieBanner.style.display = "flex";
+      }
+
+      // Al hacer clic en aceptar, lo guardamos y ocultamos el banner
+      acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookiesAceptadas", "true");
+        cookieBanner.style.display = "none";
+      });
+    }
+  });
+
 })();
