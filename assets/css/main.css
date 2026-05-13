@@ -1185,6 +1185,33 @@ section,
   }
 }
 
+/* ========================================================= */
+/* ESTILOS UNIFICADOS PARA BOTONES DE LA CARTA               */
+/* ========================================================= */
+#bloques-tematicos .btn,
+.about .cta-buttons .btn {
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  background-color: #802f2e; 
+  color: #ffffff;
+}
+
+#bloques-tematicos .btn:hover,
+.about .cta-buttons .btn:hover {
+  background-color: #E8AD5C !important;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#bloques-tematicos .btn:active,
+.about .cta-buttons .btn:active {
+  background-color: #802f2e !important;
+  transform: translateY(-1px);
+}
 
 /*--------------------------------------------------------------
 # About Section
@@ -1666,6 +1693,71 @@ section,
     align-self: flex-end;
   }
 }
+
+/* ========================================================= */
+/* BOTONES FLOTANTES (WHATSAPP Y SUBIR ARRIBA)               */
+/* ========================================================= */
+
+.whatsapp-float, .scroll-top {
+  display: none !important;
+}
+
+body.cookies-accepted .whatsapp-float {
+  display: flex !important;
+}
+body.cookies-accepted .scroll-top {
+  display: flex !important;
+}
+
+/* --- Botón WhatsApp --- */
+.whatsapp-float {
+  position: fixed !important;
+  width: 50px !important; 
+  height: 50px !important; 
+  bottom: 20px !important; 
+  right: 20px !important;
+  background-color: #25d366 !important;
+  color: #FFF !important;
+  border-radius: 50px !important;
+  font-size: 28px !important; 
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3) !important;
+  z-index: 999999 !important;
+  transition: all 0.3s ease !important;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e !important;
+  transform: scale(1.1) !important;
+  color: #fff !important;
+}
+
+/* --- Botón Subir --- */
+.scroll-top {
+  position: fixed !important;
+  visibility: hidden;
+  opacity: 0;
+  right: 20px !important;
+  bottom: 85px !important; 
+  z-index: 999999 !important;
+  background-color: var(--accent-color) !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50px !important;
+  transition: all 0.4s !important;
+  color: #fff !important;
+}
+
+.scroll-top.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  bottom: 85px !important; 
+}
+
+.scroll-top:hover {
+  transform: scale(1.1) !important;
+  background-color: #E8AD5C !important;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials Section

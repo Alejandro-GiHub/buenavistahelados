@@ -70,26 +70,25 @@
     });
   }
 
-  /**
-   * Scroll top button
+/**
+   * Lógica del botón de subir (Scroll top)
    */
-  let scrollTop = document.querySelector('.scroll-top');
-
-  function toggleScrollTop() {
-    if (scrollTop) {
+  const scrollTop = document.querySelector('.scroll-top');
+  if (scrollTop) {
+    const toggleScrollTop = () => {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
-  }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
+    
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
-
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+  }
 
   /**
    * Animation on scroll function and init
@@ -191,17 +190,20 @@
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptBtn = document.getElementById("accept-cookies");
 
-    // Comprobamos que el banner exista en la página actual
-    if (cookieBanner && acceptBtn) {
-      // Si no existe el registro de aceptación en el navegador, lo mostramos
-      if (!localStorage.getItem("cookiesAceptadas")) {
-        cookieBanner.style.display = "flex";
-      }
+    // 1. Comprobamos si las cookies YA estaban aceptadas de antes
+    if (localStorage.getItem("cookiesAceptadas")) {
+      // Si ya estaban aceptadas, le ponemos la etiqueta al body para que aparezcan los botones flotantes
+      document.body.classList.add("cookies-accepted");
+    } 
+    // 2. Si no estaban aceptadas y existe el banner, lo mostramos
+    else if (cookieBanner && acceptBtn) {
+      cookieBanner.style.display = "flex";
 
-      // Al hacer clic en aceptar, lo guardamos y ocultamos el banner
+      // 3. Al hacer clic en aceptar...
       acceptBtn.addEventListener("click", () => {
-        localStorage.setItem("cookiesAceptadas", "true");
-        cookieBanner.style.display = "none";
+        localStorage.setItem("cookiesAceptadas", "true"); // Lo guardamos
+        cookieBanner.style.display = "none"; // Ocultamos el cartel oscuro
+        document.body.classList.add("cookies-accepted"); // ¡Hacemos aparecer los botones!
       });
     }
   });
